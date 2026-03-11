@@ -1,0 +1,45 @@
+\problemname{a keyboard of all time}
+
+\parindent0pt
+
+shhh. \\
+wait. \\
+did you hear that click? \\
+they think I don’t know what they’re doing. But I see the them. I hear the keys
+at night. The clackclackclack like teeth in the walls. \\
+i need to know. who types?? clakc clack clack \\
+
+the voices provide me with information about their keyboard and what they will
+type. BUT WHO TYPES WHAT??? \\
+the feds are after me, if i cant provide them this information they WILL put me
+in a squad car and place me in guantanamo.
+
+every step, one person can choose to make a move. this move is either to jump on
+a key to press it, or travel to another connected key. It is not possible for
+both people to make a move in the same step.
+
+\begin{Input}
+  The input consists of:
+  \begin{itemize}
+    \item One line containing two integers $N$ ($1 \leq N \leq 26$) and $M$,
+          the total number of keys and connected key pairs respectively.
+    \item Then follow $M$ lines. Each line contains two space-separated
+          letters, $a_i$ and $b_i$, representing two connected keys on the
+          keyboard. Each key may either be a letter, or a sequence of
+          numbers, the second case indicating a malfunctional key that
+          serves no purpose. In either case, they are unique to the key.
+    \item Then follows two space-reparated letters, $a_s$ and $b_s$, the
+          starting key of person A and person B.
+    \item Finally comes a line that contains the string $W$ ($1 \leq
+          |W| \leq 500$), the word that the people are going to type. This
+          line is guaranteed to only include characters that are on the
+          keyboard, and contains no white-space.
+  \end{itemize}
+\end{Input}
+
+\begin{Output}
+Output a line containing a string of the same length as the word $W$, where each
+character is either `A` or `B`, indicating which person typed each corresponding
+character in $W$. Then, output a second line containing an integer indicating
+the total number of steps taken to type the word.
+\end{Output}

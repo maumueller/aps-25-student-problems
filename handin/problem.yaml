@@ -1,0 +1,13 @@
+# Specification: https://icpc.io/problem-package-format/spec/2023-07-draft.html
+problem_format_version: legacy
+# 'pass-fail', 'interactive', 'multi-pass', or 'interactive multi-pass'
+type: pass-fail
+name: The Aglet Merchant
+uuid: 8ee7605a-43dd-8ce5-1ca0-9ef8ecfeab63
+  #url:
+license: public domain
+
+# limits:
+#   time_limit: 1.0
+author: Frederik Buur et al.
+source: Algorithmic Problem Solving 2025, ITU

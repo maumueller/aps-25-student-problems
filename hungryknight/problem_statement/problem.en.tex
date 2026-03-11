@@ -1,0 +1,36 @@
+\problemname{Hungry and Tired Knight}
+
+The Knight found himself alone on the chessboard, surrounded by only a few enemies. His King has tasked him with capturing the Kingdom's enemies. However,
+not all enemies are equal; some have a greater value than others. The greater the value of enemies the Knight brings back, the bigger the reward from the 
+King. 
+However, our Knight is very tired, so he can only muster enough energy to move a certain number of times on the board before he gets home.
+
+Help him get the biggest reward possible from the King without overworking him.
+
+\subsubsection*{Input}
+
+\begin{itemize}
+    \item one line with three space-separated integers $n, m$ and $k$ $(1 \le n \le 500$ and $0 \le m \le 16$ and $0 \le k \le 10000$): the size of the board, the number of enemies and the number of moves the Knight can make.
+    \item one line with two space-separated integers $r_0$ and $c_0$ $(0 \le r_0 < n$ and $0 \le c_0 < n)$ the starting location of the Knight by row and column.
+    \item $m$ lines with 3 space-separated integers $v_i$, $r_i$ and $c_i$ $(1 \le v_i \le 1000$ and $0 \le r_i < n$ and $0 \le c_i < n)$: the value, and the row and column position of an enemy.
+\end{itemize}
+
+\subsubsection*{Output}
+A single integer representing the maximum value of enemies the Knight can capture.
+
+
+\section*{Sample Input 1}
+\begin{verbatim}
+8 3 10
+0 0
+10 2 1
+20 1 2
+15 3 3
+\end{verbatim}
+
+\section*{Sample Output 1}
+\begin{verbatim}
+45
+\end{verbatim}
+
+

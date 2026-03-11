@@ -1,0 +1,17 @@
+name: Hungry and Tired Knight
+author: Jon Bernstorff Lehmann et al.
+license: cc by-sa
+rights_owner: Group F
+
+limits:
+    time_multiplier: 5
+    memory: 1024
+
+validation: custom
+
+type: scoring
+
+grading:
+    objective: max
+    show_test_data_groups: true
+source: Algorithmic Problem Solving 2025, ITU

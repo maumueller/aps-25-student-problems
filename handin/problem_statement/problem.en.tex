@@ -1,0 +1,46 @@
+\problemname{The Aglet Merchant}
+
+%\illustration{0.3}{image.jpg}{
+%    Caption of the illustration (optional).
+%    CC BY-SA 4.0 by X on \href{https://example.com/reference-to-image}{Y}
+%}
+
+% optionally define variables/limits for this problem
+% \newcommand{\maxa}{123456789}
+
+Unfortunately, you work for an aglet merchant who has a vast fleet of caravans to transport his wares across
+a desert. Recently, a robber has been plundering his caravans. As his lowly servant, he commands you to
+redesign the distribution process to ensure that he stays filthy rich. As the slimy, greedy pessimist he is,
+the merchant wants you to maximize how much he is guaranteed to earn even if the robber attacks the worst
+possible caravan, and steals all the aglets from it. Since the robber cannot be everywhere at once, only
+one caravan can be attacked. His caravans travel towards cities, and along the way, there can be
+intermediary stops, they call trading posts. Trading posts are just places where caravans can go to and
+deliver the wares to the next caravans, but unlike cities, the aglets never end there, they just pass
+through. Since the robber might not attack, and the merchant does not want to lose profit, he will always
+send as many aglets as he can, limited only by the caravan’s capacity and the limits of what he is allowed
+to import into a city, set by the Trade Federation.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{aglet.png}
+    \\[1ex]
+    \textit{Picture of aglets}
+\end{figure}
+
+\begin{Input}
+    The input consists of:
+       \begin{itemize}
+            \item One line containing two numbers C and P, where $1 \leq C \leq 100$ is the price to produce an aglet, and $C < P \leq 1000$ is the selling price of an aglet.
+            \item A second line contains three numbers T, N and R, where $0 \leq T \leq 500$ is the number of trading posts that the caravans can pass through, $1 \leq N \leq 100$ is the number of cities he exports aglets to and $1 \leq R \leq 1500$ is the number of caravans that go between trading posts and cities. Trading posts are numbered 1 to T, and the cities are numbered T+1 to T+N. The merchant ships all his aglets from his warehouse at 0.
+            \item Then comes N lines, each containing an integer which is the amount of aglets The Trade Federation has allowed you to import into the N-th city.
+            \item Lastly R lines, each containing 3 integers, representing a caravan. The first integer is the starting point, the second is the endpoint, both of which represent a trading post, a city or his warehouse. The third is the amount of aglets the caravan can carry, which is always lower than $2^{31}$. There can only be one caravan between a given starting point and ending point.
+        \end{itemize}
+\end{Input}
+
+\begin{Output}
+    If the merchant can make money on the trade route no matter where the robber attacks, output two integers.
+    The first one is the number of aglets that will still reach the city if the robber attacks the caravan
+    with the most aglets. The second is the amount of profit the merchant will make in the same case, if all
+    aglets reaching the city is sold.\\
+    If it is possible that he can not make a profit, output "Not worth".
+\end{Output}

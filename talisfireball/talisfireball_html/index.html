@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Linux version 5.6.0">
+  <meta content="text/html; charset=utf-8" http-equiv=
+  "content-type">
+  <title></title>
+  <link rel="stylesheet" href="problem.css">
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: { 
+    ignoreClass: ".*",
+    inlineMath: [['$','$'], ['\\(','\\)']]
+        },
+  MMLorHTML: {
+    prefer: {Firefox: "HTML"}
+    }
+  });
+  </script>
+  <script type="text/javascript" src=
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+  <div class="problembody">
+    <div class="problemheader">
+      <h1>Talis’ Fireball</h1>
+      <h3>Problem ID: talisfireball</h3>
+    </div>
+    <p>The battle had been raging for many rounds and your party is
+    tired. Things are looking dark, until the wizard Talis realizes
+    he has a 3rd level spell slot left. That’s enough for a
+    Fireball! But while Talis is searching his scrolls, an arrow
+    grazes his glasses. They fall to the ground and shatter into
+    pieces. Now you all need to work together to find out how many
+    people Talis can hit.<br>
+    <br>
+    Your team will shout the amount of enemies and their
+    coordinates to you. Then they will also shout their location,
+    just so Talis doesn’t hit them. Now it is up to you to find out
+    how many enemies Talis can hit with one fireball. Once you tell
+    him the max amount of enemies he can hit, Talis will use his
+    wizard energy to feel where the fireball should hit on the
+    battlefield.<br>
+    <br>
+    In short, you need to calculate the maximum number of enemies
+    Tails can hit with one Fireball.<br>
+    <br>
+    Talis having no situational awareness states multiple rules for
+    where he is willing to place the fireball and how big he can
+    make it. While the rest of your party holds the enemies at
+    bay.<br>
+    <br>
+    All enemies, allies and the fireball itself will be placed on a
+    grid, like shown in the picture. An enemy is considered hit by
+    a fireball if the middle of the square is within the
+    <span class="tex2jax_process">$2.5 m$</span> radius circle the
+    fireball creates. The fireball cannot hit any ally, or Talis
+    will refuse to throw it. Additionally, Talis can only throw the
+    fireball so far, so we shall only consider an area of
+    <span class="tex2jax_process">$450 m * 450 m$</span>.</p>
+    <center>
+      <img src="img-0001.png" alt=
+      "\includegraphics[width=0.5\textwidth ]{Example.png}" style=
+      "width:50.00%">
+    </center>
+    <h2>Input</h2>
+    <p>The input consist of 4 lines. First line containing how many
+    enemies there are on the battlefield <span class=
+    "tex2jax_process">$0 \leq e \leq 100000$</span><br>
+    Second line contains e integers of coordinates of the enemies,
+    seperated by spaces.<br>
+    Third line contains how many party-members are on the
+    battlefield <span class="tex2jax_process">$0 \leq f \leq
+    100000$</span><br>
+    Last line contains f integers of coordinates of your friends,
+    seperated by spaces.</p>
+    <h2>Output</h2>
+    <p>Output a single integer giving the maximum number of enemies
+    a single fireball can hit at once, without hitting any
+    friends.</p>
+    <table class="sample" summary="sample data">
+      <tr>
+        <th>Sample Input 1</th>
+        <th>Sample Output 1</th>
+      </tr>
+      <tr>
+        <td>
+          <pre>3
+5 5
+3 3
+12 12
+0
+</pre>
+        </td>
+        <td>
+          <pre>2
+</pre>
+        </td>
+      </tr>
+    </table>
+    <table class="sample" summary="sample data">
+      <tr>
+        <th>Sample Input 2</th>
+        <th>Sample Output 2</th>
+      </tr>
+      <tr>
+        <td>
+          <pre>2
+5 7
+3 7
+2
+5 8
+3 8
+</pre>
+        </td>
+        <td>
+          <pre>2
+</pre>
+        </td>
+      </tr>
+    </table>
+    <table class="sample" summary="sample data">
+      <tr>
+        <th>Sample Input 3</th>
+        <th>Sample Output 3</th>
+      </tr>
+      <tr>
+        <td>
+          <pre>2
+5 3
+1 3
+1
+3 3
+</pre>
+        </td>
+        <td>
+          <pre>1
+</pre>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

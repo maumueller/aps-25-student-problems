@@ -1,0 +1,20 @@
+\problemname{PE trouble}
+
+You are a physical education (PE) teacher. At the start of class, you line up all $n$ participants in a specific order. Shortly after, you leave the room.
+When you return, you see that some participants have changed places by swapping with adjacent neighbors. You remember the exact order you left them in and now see their new order.
+Determine the minimum number of adjacent swaps that could have led from your original order to the current one.
+
+\section*{Input}
+The first line contains the integer $n$, the number of participants. You assigned a unique number from $1$ to $n$ to each of them.
+The second line contains $n$ distinct integers, the order of participants when you returned.
+The third line contains $n$ distinct integers, the original order of participants before you left.
+A swap can only happen between two participants at positions $i$ and $i + 1$, for $1 \leq i < n$.
+
+\section*{Output}
+
+Compute the minimum amount of swaps that could have taken place. Output the minimum number of adjacent swaps required.
+
+\section*{Constraints}
+\begin{itemize}
+    \item $1 \leq n \leq 1 000 000$
+\end{itemize}

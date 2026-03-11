@@ -1,0 +1,10 @@
+# Specification: https://www.kattis.com/problem-package-format/spec/legacy.html
+#uuid: "8ee7605a-033d-8615-19ae-78648caf9b0b"
+name:
+  en: Nix Store
+author: David Alexander Feldner et al.
+source: Algorithmic Problem Solving 2025, ITU
+license: cc by-sa
+limits:
+  time_limit: 1.0
+validation: custom

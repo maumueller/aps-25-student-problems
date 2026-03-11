@@ -1,0 +1,14 @@
+author: Oliver Starup et al.
+- Daniel Haugboelle <dtha@itu.dk>
+- Jonathan Opitz <opit@itu.dk>
+- Oliver Starup <osta@itu.dk>
+source: Algorithmic Problem Solving 2025, ITU
+type: pass-fail 
+name: Pint-Sized Priorities
+license: public domain
+limits:
+    time_multiplier: 1
+    time_safety_margin: 1
+    output: 50 
+
+

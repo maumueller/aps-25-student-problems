@@ -1,0 +1,85 @@
+solution: /submissions/accepted/joke.py
+version: 2024-11 # use this version of the generators framework
+data:
+  sample:
+    data:
+      - '':
+          in: |
+            5 4
+            o f
+            f b
+            b a
+            b r
+            f b
+            foobar
+          ans: |
+            AAABBB
+            10
+
+  secret:
+    data:
+      - circle:
+          in: |
+            4 4
+            p o
+            o t
+            t a
+            a p
+            p t
+            potato
+          ans: |
+            AABBBA
+            9
+      - one_key:
+          in: |
+            1 0
+            a a
+            aaaa
+          ans: |
+            AAAA
+            4
+
+      - split_keyboard:
+          in: |
+            4 2
+            a b
+            c d
+            a c
+            abcd
+          ans: |
+            AABB
+            6
+      - malfunc:
+          in: |
+            6 5
+            a b
+            b c
+            c d
+            d 404
+            404 500
+            a c
+            abcd
+        # Demonstrates that a solution can use a letter not in the word as part
+        # of its path
+      - use_f_as_shortcut:
+          in: |
+            10 10
+            a b
+            b c
+            c d
+            d e
+            e f
+            f a
+            b g
+            g h
+            h i
+            i j
+            a g
+            abcdeghija
+          ans: |
+            AAAAABBBBA
+            19
+         
+      - large:
+          generate: random_tree.py {seed:1} 500
+          count: 10

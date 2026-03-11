@@ -1,0 +1,40 @@
+\problemname{Pint-Sized Priorities}
+\begin{center}
+    %\centering
+    \includegraphics[width=0.5\linewidth]{./Frederik.jpg}
+    %\label{fig:enter-label}
+\end{center}
+\begin{center}
+        \textit{Frederik enjoying a bear at Scrollbar}
+\end{center}
+Some people are celebrated for their acting talents or athletic achievements. Frederik, however, is known for something entirely different. His claim to fame? An unshakable commitment to completing tasks in the exact order he hears about them—no matter how trivial, complex, or downright ridiculous they are.\\\\
+This peculiar habit came into the spotlight in 2025, when Frederik took on a role as a TA for the APS (Algorithmic Problem Solving) course. What he didn't expect at the time was the barrage of strange, non-algorithmic questions from curious students. Questions like:
+\begin{itemize}
+    \item[] “How many beers from Scroll Bar would it take for you to solve all the APS problems using only Bash?”
+    \item[] “How many beers would you need to write a WebAssembly interpreter in raw assembly?”
+\end{itemize}
+Frederik, being a responsible and slightly too-honest TA, gave these questions serious thought.
+\begin{itemize}
+    \item[] “Solving all APS problems in Bash? That’d take at least 1,000 beers at Scroll.”
+    \item[] “A WebAssembly interpreter in assembly? Hmm... 10,000 beers should cover it.”
+\end{itemize}
+Naturally, the students were fascinated by these answers and started keeping track—recording each task along with the number of beers Frederik claimed he'd need. As more whimsical challenges were proposed throughout the semester, the list grew quite large. \\\\
+Eventually, the students grew more curious. They didn’t just want Frederik to answer these oddball questions—they wanted to see him actually complete some of these tasks. So, they confronted him with their request. \\\\
+Frederik, true to his nature, explained that he completes tasks in the order he receives them. But there was a catch: with so many tasks on the list, the students quickly realized that they needed a way to calculate how many beers they'd have to buy for him. Worse, Frederik sometimes updated his beer estimates for tasks, meaning the students would need to account for these changes in real-time.\\\\
+With exams fast approaching, the students turned to you to write a program that would:
+\begin{itemize}
+    \item Efficiently compute the total number of beers Frederik would need to complete a range of tasks.
+    \item Handle updates quickly when Frederik revised his beer estimates for individual tasks.
+\end{itemize}
+Can you help them?
+
+
+\section*{Input}
+The input firstly consists of a line containing $N$ and $M$: $1 \leq N \leq 5 \cdot 10^5$ and $1 \leq M \leq 5 \cdot 10^5$ where $N$ is the amount of tasks that are available to complete and $M$ being the number of operations to do. \\
+The next $N$ lines contain each of the $N$ tasks first the cost $-2^{31} \leq c \leq 2^{31} - 1$ then followed by a string. The string excluding the space after the cost has a length $1 \leq l \leq 50$. There are no duplicate tasks but different tasks can have the same cost. So for sample input 1 the cost of the first task would be $1000$ and the task would be "solve all aps problems in bash". \\
+The next line in the input will contain the first of the $M$ operations being either "calculate" or "add". If the operation is "calculate" then the line will be followed by two lines containing the strings of the tasks which Frederik will complete. These tasks will always be given in the correct same order given in the top input reading. If the operation is "add" then the line will be followed by a single line containing the information used to change the cost of a task in the form similar to the $N$ earlier lines. \\
+For the second sample input the first operation is "calculate" and the next two lines contain the tasks "solve all aps problems in bash" and "drink a beer in scroll". Your program should now calculate the total cost of all the tasks Frederik is completing.\\
+The second operation is "add" and the next line contains the change in cost: $10$ and then the task: "solve all aps problems in bash". Your program should now add $10$ the cost of "solve all aps problems".
+
+\section*{Output}
+The output should contain the total cost of the tasks completed by Frederik in the unit "beers in scroll" each time the input has specified a "calculate" operation.

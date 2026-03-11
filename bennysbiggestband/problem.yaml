@@ -1,0 +1,7 @@
+name: bennysbiggestband
+license: public domain
+limits:
+  time_multiplier: 2
+uuid: 8f974662-ea36-4a3d-831a-d8c7e861c8e7
+author: Benjamin Juul Jensen et al.
+source: Algorithmic Problem Solving 2025, ITU

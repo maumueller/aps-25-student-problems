@@ -1,0 +1,20 @@
+name:
+  #lang: name
+  en: a keyboard of all time
+uuid: 8ee7605a-b50e-8644-3c51-c8c6a090ac59
+author: Alexander Christian Thoren et al.
+source: Algorithmic Problem Solving 2025, ITU
+license: cc by-sa
+rights_owner: author
+validation: custom
+
+# One or more of:
+# case_sensitive
+# space_change_sensitive
+# float_absolute_tolerance eps
+# float_relative_tolerance eps
+# float_tolerance eps
+#validator_flags:
+
+# limits:
+#   time_limit: 1.0

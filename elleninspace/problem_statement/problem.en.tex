@@ -1,0 +1,30 @@
+\problemname{Ellen in Space}
+
+Officer Ellen finds herself in trouble, alone deep in space.
+
+After an accident on her spaceship, Ellen and her cat had to escape the ship, on their space shuttle.
+The shuttle only has limited fuel and communication capability, so Ellen's best plan is to set course for known space, and hope a space station will find her.
+
+Ellen is at the edge of known space, so all the space stations are in front of her space shuttle.
+In the space shuttle's navigation computer, the shuttle is in point $(0,0,0)$
+Luckily for Ellen, her computer knows the location of the $N$ nearby company space stations.
+Locations are given as $(x,y,z)$ coordinates, in parsecs.
+All company space stations have a powerful radar, capable of detecting ships within a radius of 1 parsec.
+
+The shuttle only has fuel for a single thrust.
+Thereafter, it flies silently through space, in a straight line.
+
+Since company space stations are unreliable, Ellen plans her course, so she will pass within radar distance of as many space stations as possible.
+This gives her the best chance of being picked up.
+
+Ellen wants to know her chances, in particular, she wants to know the number of space stations she will pass on her best course.
+
+\section*{Input}
+The first line contains the integer $0<N\leq100$, the number of space stations.
+Then follows $N$ lines of the coordinates of real numbers $x, y, z$ of each space station, where $1.0\leq x\leq100.0$, and $-100.0\leq y,z \leq 100.0$.
+
+The input will be such that the answer does not change even if the radius of the radar were 
+$1+10^{-3}$ long.
+
+\section*{Output}
+The highest number of stations Ellen can pass by, when flying in a straight line.

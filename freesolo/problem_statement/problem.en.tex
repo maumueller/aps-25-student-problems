@@ -1,0 +1,26 @@
+\problemname{Free Solo}
+
+Alex is a free solo climber, meaning he likes to scale mountains without any safety gear.
+He just completed another risky climb, and is currently enjoying the view from the top.
+
+However, due to the adrenaline rush during his ascent, he forgot to note the safest path back down.
+Knowing that climbing back down is more complicated, he wants to minimize the risk of falling to his death.
+
+Since he has 20/20 vision, and due to the shape of the mountain, he can see all the different sections
+he can traverse on the way down. After each completed section, he can only continue his descent in sections
+directly below the one he just completed, either to the left or to the right.
+
+Having plenty of experience with risky climbs, he is able to estimate how dangerous each
+section is. Unfortunately, he struggles to piece the sections together to find the least
+risky path overall.
+
+
+\section*{Input}
+
+The first line contains an integer $N$ $(1 \leq N \leq 1000)$, the number of rows in the mountain path.
+
+Each of the next $N$ lines contains a list of integers. The $i$-th of these lines contains exactly $i$ integers, representing the risk values of the positions on the $i$-th row of the mountain. Each integer $M$ is in the range $-1000 \leq M \leq 1000$.
+
+\section*{Output}
+
+A single integer that represents the total risk value of the least dangerous path down.

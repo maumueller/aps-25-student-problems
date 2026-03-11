@@ -1,0 +1,26 @@
+\problemname{Reverse List of Numbers}
+
+You are a mighty mage in the lower depths of a dungeon accompanied by your squad.
+The dungeon walls are suddenly caving in and you're all in great danger!
+In the room you spot a number of portals exactly matching your squad size.
+You need to use your magic to open these portals in order to transport out as many members as possible before it's too late.
+The portals are brittle and can only withstand transporting a single person before it becomes unusable.
+Time is of the essense and opening the portals one at a time will take too long.
+Unfortunately, with your limited capabilities you alone are unable to activate more than one portal at a time.
+Luckily for you and your party, there are many interconnected runes laid out on the dungeon floor.
+You recognize these from the magic hardware store, as the polarized runes that only send magic in one direction.
+These runes will be able to distribute your magic and activate more portals at once.
+Each wire connecting the runes can only carry a limited amount of magic before they break.
+Find a way to route your magic through the interconnected runes to open the greatest number of portals at once, without breaking them.
+
+\section*{Input}
+The mage can only access rune $0$, which is where they will send through their magic.
+
+The input consists of one line containing 3 integers:
+The number of runes $5 \leq R \leq 20000$, the number of wires $1 \leq W \leq 60000$, the number of portals $2 \leq P \leq 10000$.
+Followed by a single line of $P$ portals.
+Followed by $W$ lines each containing 3 integers. $0 \leq A \leq R$, $1 \leq B \leq R$, and $1 \leq C \leq 10000$.
+$A$ and $B$ indicating a wire between either two runes or a rune and a portal, and $C$ representing the maximum magic the wire can transport before breaking.
+
+\section*{Output}
+The output consists of a single line containing the number of portals you are able to open.

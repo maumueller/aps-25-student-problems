@@ -1,0 +1,36 @@
+\problemname{Nix Store}
+
+\newcommand{\maxn}{10^6}
+\newcommand{\maxy}{2000}
+\newcommand{\maxlr}{10^{10}}
+
+I'm at a loss! I have been at my new job for a couple of weeks. But now someone is causing the local servers to run out of space, which causes the company to come to a complete halt.\\
+
+Bob says it is running something called NixOS and that it should be VERY easy to install and remove software? I guess I have an idea as to why the drives keep filling up... apparently, the "higher-ups" want to know what is taking up all that space. But for some reason, I have ended up with that task? \\
+
+I need your help with this one! I have been given the history of all the latest installation and deletion events on one of the servers. The time $l$ and $r$ are guaranteed to be in the range of the events. Can you help me narrow down the search for the huge storage usage? I will just tell you what is added or deleted and then sometimes ask how much space the programs installed in a given timespan currently take.\\
+
+Sounds good? Oh, and don't tell the boss that I have kind of pawned this off onto you!\\
+
+\begin{Input}
+    The input consists of:
+    \begin{itemize}
+        \item An integer $n$ $(1 \leq n  \leq \maxn)$ being the number of statements.
+        \item Followed by $n$ lines of statements, each being in one of the following formats:
+
+        \begin{itemize}
+            \item \texttt{$t$ add $x$ $y$} $(1 \leq y \leq \maxy)$: add a package with name $x$ and size of $y$ megabyte(s) at timestamp $t$.
+            \item \texttt{$t$ remove $x$}: remove a package with name $x$ at timestamp $t$.
+            \item \texttt{$t$ query $l$ $r$} $(1 \leq l, r \leq \maxlr)$:  at timestamp $t$, query the total size of all packages installed between timestamp $l$ and timestamp $r$, inclusive.
+        \end{itemize}
+        \item All package names use only characters a-z.
+        \item It is guaranteed that the time $t$ of each event is unique and that a package being removed is currently installed.
+        \item All queried timestamps have been seen before.
+        \item When adding a program, the program is not currently installed.
+    \end{itemize}
+\end{Input}
+
+\begin{Output}
+    Print the result of each query on a new line.\\
+    The result should be the total size of all packages installed between time $l$ and time $r$, inclusive.
+\end{Output}

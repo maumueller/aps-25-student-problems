@@ -1,0 +1,6 @@
+author: Gabriel Sørensen et al.
+source: Algorithmic Problem Solving 2025, ITU
+license: educational
+limits:
+  time_multiplier: 1.25
+  memory: 256
