@@ -3,7 +3,7 @@ problem_format_version: legacy
 # 'pass-fail', 'interactive', 'multi-pass', or 'interactive multi-pass'
 type: pass-fail
 name: The Aglet Merchant
-uuid: 8ee7605a-43dd-8ce5-1ca0-9ef8ecfeab63
+uuid: 0f3b1ed7-01b4-460f-b361-63833b0c21dd
   #url:
 license: public domain
 

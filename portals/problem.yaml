@@ -1,4 +1,5 @@
 name: portals
+uuid: d57b122f-a032-4a60-b9ee-5d7807b093fd
 license: public domain
 limits:
   output: 10
