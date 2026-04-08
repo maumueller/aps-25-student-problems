@@ -4,8 +4,6 @@ license: public domain
 limits:
   output: 10
   memory: 4096
-  time_limit: 1.0
-  time_multipliers:
-    time_limit_to_tle: 1.0
+  time_safety_margin: 1.0
 author: Olivier-Baptiste Hansen et al.
 source: Algorithmic Problem Solving 2025, ITU

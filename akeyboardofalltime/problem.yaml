@@ -1,6 +1,4 @@
-name:
-  #lang: name
-  en: a keyboard of all time
+name: A Keyboard of all Time
 uuid: 3c651369-1e6c-4517-877a-a987958973da
 author: Alexander Christian Thoren et al.
 source: Algorithmic Problem Solving 2025, ITU
